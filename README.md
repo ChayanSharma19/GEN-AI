@@ -1,45 +1,77 @@
 Fake News Detection
 
 Author
+
 Chayan Sharma
+
 
 Description
 
-This repository contains a fake news detection project developed for the GEN AI course NLP assignment at VIT BHOPAL University. The project classifies news articles as fake or real using natural language processing (NLP) and machine learning. It uses Logistic Regression with the Kaggle Fake and Real News Dataset, achieving approximately 92% accuracy. The implementation is inspired by advanced workflows for clickbait and fake news article detection from a downloaded project, adapted for simplicity and accessibility.
-The repository includes:
-•	my_fake_news_detection.ipynb: Jupyter Notebook with the implementation code.
-•	confusion_matrix.png: Visualization of the model's performance.
-•	explanation.md: Brief summary of the implementation (Phase 2 deliverable).
-•	report.tex: Final report in LaTeX (Phase 3 deliverable).
+This repository features a streamlined fake news classification project, developed as part of the **GEN AI – NLP coursework** at **VIT Bhopal University**. The system leverages **Logistic Regression** to distinguish between fake and real news articles, achieving an accuracy of approximately **92%**. While the foundation of the project is inspired by more complex BERT and LSTM-based models, this version is crafted for clarity and ease of use.
 
-Instructions
+What's Inside?
 
-1.	Clone the Repository:
-2.	Set Up Environment:
-o	Ensure Python 3.8+ is installed.
-o	Install required libraries:
+`my_fake_news_detection.ipynb` – The main Jupyter Notebook with code for preprocessing, model training, and evaluation.
+
+`confusion_matrix.png` – Graphical representation of the model’s confusion matrix.
+
+`explanation.md` – A concise technical overview of the implementation (for Phase 2 submission).
+
+`report.tex` – LaTeX-formatted final report (Phase 3 submission).
+
+
+⚙️ Getting Started
+
+#### 1. Clone the Repository
+
+git clone https://github.com/ChayanSharma19/GEN-AI.git
+
+2. Set Up Your Environment
+
+Make sure you have **Python 3.8 or above**. Then install the required dependencies:
+
 pip install pandas nltk scikit-learn numpy seaborn matplotlib
-3.	Download the Dataset:
-o	The Kaggle Fake and Real News Dataset (Fake.csv, True.csv) is not included due to file size limits. Download it from Kaggle.
-o	Place the files in a data/ subfolder:
-o	GENai_Project_22BCY10231/data/Fake.csv
-GENai_Project_22BCY10231/data/True.csv
-4.	Run the Notebook:
-o	Open my_fake_news_detection.ipynb in Jupyter Notebook:
+
+3. Add the Dataset
+
+Due to file size limitations, the dataset isn't included here.
+
+Download the "Fake and Real News Dataset" from [Kaggle](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset).
+Place the files as shown:
+
+```
+GENai_Project_22BCY10231/
+└── data/
+    ├── Fake.csv
+    └── True.csv
+```
+
+4. Run the Notebook
+
+Start Jupyter Notebook and open the file:
+
 jupyter notebook my_fake_news_detection.ipynb
-o	Execute all cells (Cell > Run All) to preprocess the data, train the model, and generate results.
 
-Output
-•	Accuracy: 92%
-•	Classification Report:
-o	Fake: Precision: 0.91, Recall: 0.93, F1-score: 0.92
-o	True: Precision: 0.93, Recall: 0.91, F1-score: 0.92
-•	Visualization: Confusion matrix saved as confusion_matrix.png.
-•	Sample Prediction: "Government claims new policy boosts economy, lacks evidence." → Fake
+Run all cells (from `Cell > Run All`) to preprocess the data, train the model, and review the output.
 
-Notes
-•	This implementation is a simplified version tailored for accessibility, using Logistic Regression and the Kaggle dataset, distinct from the original project’s BERT and LSTM approaches.
-•	Results were obtained by running the notebook on a standard laptop, ensuring practicality for the GEN AI course submission.
+
+Key Results
+Accuracy: ~92%
+
+Classification Metrics:
+
+  -Fake News: Precision: 0.91 | Recall: 0.93 | F1-score: 0.92
+  -Real News*: Precision: 0.93 | Recall: 0.91 | F1-score: 0.92
+  -Output Visualization**: Confusion matrix saved in `confusion_matrix.png`
+  -Example Prediction**:
+
+  
+ Notes
+
+  -This implementation simplifies advanced deep learning workflows into a more accessible pipeline using traditional ML.
+  -All experiments were conducted on a personal laptop for feasibility and portability in academic settings.
+
+
 Acknowledgments
 •	Dataset sourced from Kaggle: Fake and Real News Dataset.
 •	Inspired by a downloaded fake news detection project that used BERT and LSTM models, whose workflows (Figures 1 and 2) informed this simplified implementation.

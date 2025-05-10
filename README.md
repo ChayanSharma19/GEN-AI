@@ -1,7 +1,7 @@
 Fake News Detection
 
 Author
-Tushar Chahar (22BCY10231)
+Chayan Sharma
 Description
 
 This repository contains a fake news detection project developed for the GEN AI course NLP assignment at VIT BHOPAL University. The project classifies news articles as fake or real using natural language processing (NLP) and machine learning. It uses Logistic Regression with the Kaggle Fake and Real News Dataset, achieving approximately 92% accuracy. The implementation is inspired by advanced workflows for clickbait and fake news article detection from a downloaded project, adapted for simplicity and accessibility.
@@ -14,18 +14,16 @@ The repository includes:
 Instructions
 
 1.	Clone the Repository:
-2.	git clone https://github.com/TusharChahar2202/GENai_Project_22BCY10231.git
-cd GENai_Project_22BCY10231
-4.	Set Up Environment:
+2.	Set Up Environment:
 o	Ensure Python 3.8+ is installed.
 o	Install required libraries:
 pip install pandas nltk scikit-learn numpy seaborn matplotlib
-5.	Download the Dataset:
+3.	Download the Dataset:
 o	The Kaggle Fake and Real News Dataset (Fake.csv, True.csv) is not included due to file size limits. Download it from Kaggle.
 o	Place the files in a data/ subfolder:
 o	GENai_Project_22BCY10231/data/Fake.csv
 GENai_Project_22BCY10231/data/True.csv
-6.	Run the Notebook:
+4.	Run the Notebook:
 o	Open my_fake_news_detection.ipynb in Jupyter Notebook:
 jupyter notebook my_fake_news_detection.ipynb
 o	Execute all cells (Cell > Run All) to preprocess the data, train the model, and generate results.
